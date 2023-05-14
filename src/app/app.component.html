@@ -19,8 +19,24 @@
     <td>{{270 | prettyTime}}</td>
   </tr>
   <tr>
+    <td>270 Seconds + roundHours</td>
+    <td>{{270 | prettyTime: {roundNearestHour: true} }}</td>
+  </tr>
+  <tr>
+    <td>3300 Seconds</td>
+    <td>{{3300 | prettyTime}}</td>
+  </tr>
+  <tr>
+    <td>3300 Seconds + roundHours</td>
+    <td>{{3300 | prettyTime: {roundNearestHour: true} }}</td>
+  </tr>
+  <tr>
     <td>3621 Seconds</td>
     <td>{{3621 | prettyTime}}</td>
+  </tr>
+  <tr>
+    <td>3621 Seconds + roundHours</td>
+    <td>{{3621 | prettyTime: {roundNearestHour: true} }}</td>
   </tr>
   <tr>
     <td>3700 Seconds</td>
@@ -41,6 +57,22 @@
   <tr>
     <td>90160 Seconds + hide minutes</td>
     <td>{{90160 | prettyTime: {showMinutes: false} }}</td>
+  </tr>
+  <tr>
+    <td>90160 Seconds + hide minutes + hide seconds</td>
+    <td>{{90160 | prettyTime: {showMinutes: false, showSeconds: false} }}</td>
+  </tr>
+  <tr>
+    <td>90160 Seconds + roundsHours</td>
+    <td>{{90160 | prettyTime: {roundNearestHour: true} }}</td>
+  </tr>
+  <tr>
+    <td>93160 Seconds</td>
+    <td>{{93160 | prettyTime }}</td>
+  </tr>
+  <tr>
+    <td>93160 Seconds + roundsHours</td>
+    <td>{{93160 | prettyTime: {roundNearestHour: true} }}</td>
   </tr>
   </tbody>
 </table>
