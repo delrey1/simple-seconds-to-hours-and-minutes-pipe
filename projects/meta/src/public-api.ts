@@ -3,3 +3,4 @@
  */
 
 export * from './lib/pretty-time.pipe';
+export * from './lib/pretty-time.module';
