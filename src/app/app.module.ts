@@ -3,16 +3,16 @@ import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from "./app-routing.module";
-import {PrettyTimePipe} from "../../projects/meta/src/lib/pretty-time.pipe";
+import {PrettyTimeModule} from "../../projects/meta/src/lib/pretty-time.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    PrettyTimePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    PrettyTimeModule
 
   ],
   providers: [],

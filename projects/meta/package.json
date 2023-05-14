@@ -1,6 +1,6 @@
 {
   "name": "simple-seconds-to-hours-and-minutes-pipe",
-  "version": "13.0.1",
+  "version": "13.0.2",
   "peerDependencies": {
     "@angular/common": "^13.4.0",
     "@angular/core": "^13.4.0"

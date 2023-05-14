@@ -27,6 +27,7 @@ export class PrettyTimePipe implements PipeTransform {
 
 }
 
+
 export interface PrettyTimeOptions {
   minutesNotation?: string
   hoursNotation?: string
