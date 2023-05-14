@@ -1,11 +1,17 @@
 <table>
-  <thead>
-  <tr>
-    <th></th>
-    <th></th>
-  </tr>
-  </thead>
   <tbody>
+  <tr>
+    <td>0.1 Seconds</td>
+    <td>{{0.1 | prettyTime}}</td>
+  </tr>
+  <tr>
+    <td>0.1 Seconds + lessThanASecondText='custom less than...'</td>
+    <td>{{0.1 | prettyTime: {lessThanASecondText: 'custom less than a second text'} }}</td>
+  </tr>
+  <tr>
+    <td>1.1 Seconds</td>
+    <td>{{1.1 | prettyTime}}</td>
+  </tr>
   <tr>
     <td>30 Seconds</td>
     <td>{{30 | prettyTime}}</td>

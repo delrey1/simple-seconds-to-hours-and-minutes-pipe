@@ -27,6 +27,9 @@ export class PrettyTimePipe implements PipeTransform {
     if (seconds > 0 && (options.showSeconds ?? true)) {
       out += seconds + (options.secondsNotation ?? ' second') + (seconds != 1 && (options.appendS ?? true) ? 's ' : ' ');
     }
+    if (value < 1) {
+      out = options.lessThanASecondText ?? 'less than a second';
+    }
 
     return out.trim();
 
@@ -44,4 +47,5 @@ export interface PrettyTimeOptions {
   showSeconds?: boolean
   appendS?: boolean;
   roundNearestHour?: boolean;
+  lessThanASecondText?: string;
 }
